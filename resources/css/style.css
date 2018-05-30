@@ -22,6 +22,10 @@
   margin-bottom:0;
 }
 
+.navbar-default .navbar-brand {
+  padding-left:calc(100% / 12);
+}
+
 /*navbar styling*/
 #search-bar {
   position:relative;
@@ -37,7 +41,7 @@
 }
 
 .search-area {
-  height: 3rem;
+  height: auto;
 }
 
 #search-input {

@@ -44,7 +44,7 @@ KindleUp.renderResult = function(result) {
     var bookImg = bookProto.best_book.small_image_url['#text'];
     var bookHTML = '<div class="row">' +
         '<div class="container-fluid">' +
-          '<div class="col-xs-8 col-xs-offset-1 search-result">' +
+          '<div class="col sm-6 col-xs-8 col-xs-offset-1 search-result">' +
             '<div class="image-container">' +
               `<img class="book-img" src="${bookImg}"/>` +
             '</div>'+
