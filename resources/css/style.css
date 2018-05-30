@@ -1,0 +1,33 @@
+html {
+  font-family: 'Abril Fatface', cursive;
+  background-color: rgba(140, 180, 200, .8);
+}
+
+/*bootstrap overrides*/
+.navbar, .navbar-default .navbar-brand {
+  color: rgba(193, 163, 88, .85);
+  font-weight:bold;
+  font-family:'Bree Serif', serif;
+  font-size:3rem;
+}
+
+/*navbar styling*/
+#search-label {
+  color: black;
+  font-family: 'Abril Fatface', cursive;
+  font-size:2rem;
+  color:rgba(0,0,30,.9);
+}
+
+.search-area {
+  height: 3rem;
+  position:relative;
+  top: calc(50px + 2rem);
+}
+
+#search-input {
+  font-family: 'Abril Fatface', cursive;
+  font-size:1.5rem;
+  color:rgba(0,0,30,.8);
+  padding-left:.5rem;
+}
