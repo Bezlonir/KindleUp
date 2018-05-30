@@ -1,7 +1,7 @@
 var KindleUp = {};
 var API_KEY = 'pZllHOn0wv6CcJj03AgKEQ';
 var secret = 'MwyWN1NSqEdFsYa2ueR2ZMEmZ5zmzI5Oijdamf0TiM';
-var url = "https://www.goodreads.com/search/index.xml?";
+var url = "https://www.goodreads.com/search/index.xml?key=";
 
 
 // runtime
