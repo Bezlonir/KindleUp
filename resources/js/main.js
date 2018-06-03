@@ -38,17 +38,24 @@ KindleUp.renderResult = function(result) {
   console.log(result.GoodreadsResponse);
   var bookListProto = [... result.GoodreadsResponse.search.results.work];
   bookListProto.forEach(function(bookProto) {
-    console.log(bookProto);
+    console.dir(bookProto);
     var bookName = bookProto.best_book.title['#text'];
     var bookAuthor = bookProto.best_book.author.name['#text'];
     var bookImg = bookProto.best_book.small_image_url['#text'];
+    var rating = parseFloat(bookProto.average_rating['#text']).toFixed(1).toString();
     var bookHTML = '<div class="row">' +
         '<div class="container-fluid">' +
           '<div class="col sm-6 col-xs-8 col-xs-offset-1 search-result">' +
             '<div class="image-container">' +
               `<img class="book-img" src="${bookImg}"/>` +
             '</div>'+
+            '<div class="info-column">' +
             `<p class="book-title">${bookName}</p>` +
+            `<p class="book-author">${bookAuthor}</p>` +
+            '</div>' +
+            '<div class="rating-col">' +
+              `<p class="rating">${rating}\\5</p>` +
+            '</div>'
           '</div>' +
         '</div>' +
     '</div>';

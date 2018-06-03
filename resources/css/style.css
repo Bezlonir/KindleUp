@@ -6,6 +6,10 @@
   background-color: rgba(140, 180, 200, .8);
 }
 
+body {
+  background-color: rgba(140, 180, 200, .8);
+}
+
 .image-container {
   max-width:100%;
   height:auto;
@@ -29,6 +33,7 @@
 /*navbar styling*/
 #search-bar {
   position:relative;
+  height:3rem;
   top: calc(50px);
   background-color: rgba(140, 180, 200, 0.1);
 }
@@ -38,6 +43,7 @@
   font-family: 'Abril Fatface', cursive;
   font-size:2rem;
   color:rgba(0,0,30,.9);
+  /*margin-left: calc(100% / 12);*/
 }
 
 .search-area {
@@ -57,7 +63,7 @@
   border-top: solid 2px rgba(0,0,30, .6);
   position:relative;
   margin-top:1rem;
-  top: calc(50px + 2.5rem);
+  top: calc(50px + 2rem);
   background-color: rgba(140, 180, 200, .8);
 }
 
@@ -80,8 +86,31 @@ label {
   flex: 2 0 4rem;
 }
 
+.info-column {
+  display:flex;
+  flex-direction:column;
+  flex: 1 1 4rem;
+}
+
 .book-title {
   font-family: 'Abril Fatface', cursive;
   font-size:1.5rem;
-  flex: 1 1 4rem;
+  /*flex: 1 1 4rem;*/
+}
+
+.book-author {
+  font-family: 'Abril Fatface', cursive;
+  font-size:1.2rem;
+  font-weight:400;
+  /*flex: 1 1 4rem;*/
+}
+
+.rating-col {
+  flex: 0 1 2rem;
+}
+
+.rating {
+  font-family:'Bree Serif', serif;
+  font-size: 2rem;
+  font-weight:800;
 }
